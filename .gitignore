@@ -1,5 +1,5 @@
-/vendor/
-.env
+/apache2/vendor/
+/apache2/.env
 .DS_Store
 *.log
 *.bak
