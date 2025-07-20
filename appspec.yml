@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /apache2
     destination: /var/www/html/apache2
 hooks:
   AfterInstall:
