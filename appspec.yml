@@ -3,8 +3,11 @@ os: linux
 files:
   - source: /apache2
     destination: /var/www/html/apache2
-    overwrite: yes
 hooks:
+  BeforeInstall:
+    - location: scripts/clean.sh
+      timeout: 60
+      runas: root
   AfterInstall:
     - location: scripts/set_permission.sh
       timeout: 300
