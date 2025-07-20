@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /apache2
     destination: /var/www/html/apache2
+    overwrite: yes
 hooks:
   AfterInstall:
     - location: scripts/set_permission.sh
